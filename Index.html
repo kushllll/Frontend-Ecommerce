@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Search Icon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="Index.html" class="logo">ophelia crafts</a>
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="animated-text">Our handmade crafts are made with love and care.</h1>
+            <p style="text-decoration: underline; font-weight: 900;">We create unique and beautiful handcrafted items using high-quality materials and traditional techniques. Our passion for craftsmanship is evident in every piece we make.</p>
+            <a href="explorepage.html" class="explore-button">Explore More</a>
+        </div>
+        <img src="kajal.png" alt="Handcrafted Items" class="hero-image">
+    </section>
+    <header>
+
+        <img src="aaaa.png" alt="Building Company Logo" class="logo">
+        <h1 class="title">Ophelia crafts</h1>
+        <h2 class="subtitle">Design-Build | Remodeling | Handcrafted | Gifts</h2>
+        
+        </header>
+        
+        <main>
+        
+        <div class="services">
+        
+        <div class="service">
+        
+        <img src="Ophell.png" alt="Remodeling" class="service-image">
+        <h3 class="service-title">Remodeling</h3>
+        <p class="service-description">We specialize in all types of remodeling projects, from kitchens and bathrooms to whole-house renovations.</p>
+        
+        </div>
+        
+        <div class="service">
+        
+        <img src="Ophell.png" alt="City Spaces" class="service-image">
+        <h3 class="service-title">City Spaces</h3>
+        <p class="service-description">We design and build innovative city spaces that promote community and livability.</p>
+        
+        </div>
+        
+        <div class="service">
+        
+        <img src="Ophell.png" alt="Civil Engineers" class="service-image">
+        <h3 class="service-title">Civil Engineers</h3>
+        <p class="service-description">Our team of civil engineers provides expert planning and design services for a wide range of projects.</p>
+        
+        </div>
+        
+        </div>
+        
+        <!-- <div class="contact">
+        
+        <h2>Contact Us</h2>
+        
+        <p>We would love to hear from you! Please contact us today to discuss your project needs.</p>
+        
+        <a href="mailto:info@buildingcompany.com" class="button">Email Us</a>
+        <a href="tel:555-555-5555" class="button">Call Us</a>
+        
+        </div> -->
+        
+        </main>
+    
+
+    <style>
+
+    body {
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2; /* Set background color for the whole page */
+            }
+
+        .navbar {
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #222;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            /* display: inline-block; */
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+            font-size: 1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="search"] {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 5px 10px;
+            border: none;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+        .fas {
+            font-size: 20px;
+        }
+
+        /* hero section css*/
+                .hero {
+            background-image: url("https://wallpapercave.com/uwp/uwp4134857.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            /* Extend background image to cover entire page */
+            position: relative;
+            top: 0;
+            height: auto;
+            min-height: 100vh;
+             /* Add rounded corners to background */
+            border-radius: 20px; /* Adjust the value for desired corner curvature */
+        }
+
+
+        .hero-text {
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            color: #ffffff;
+            text-align: left;
+            width: 50%;
+        }
+
+        .animated-text {
+            font-size: 80px;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(247, 0, 0, 0.2)2);
+            animation: popIn 2s ease-in-out forwards;
+        }
+
+        /* @keyframes popIn {
+            from {
+                transform: scale(2);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        } */
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .hero-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .hero-image:hover {
+            transform: scale(0.8);
+        }
+     /* hero section hover button*/
+     .explore-button {
+            padding: 10px 50px;
+            background-color: #fafafa;
+            color: rgb(10, 8, 8);
+            font-size: 25px;
+            border-radius: 1.5em;;
+            margin-top: 20px;
+            
+            
+        }
+        /* footer*/
+                footer {
+        text-align: center;
+        padding: 1rem;
+        }
+
+        footer {
+        background-color: #f2f2f2;
+        }
+
+        /* next section */
+     
+        .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  width: 300px;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.service-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 1.5rem;
+}
+
+.contact {
+  padding: 2rem 0;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin 
+
+
+    </style>
+
+<footer>
+    <p>Copyright &copy; Ophelia 2023</p>
+  </footer>
+
+</body>
+</html>
